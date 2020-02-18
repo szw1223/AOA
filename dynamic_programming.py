@@ -4,7 +4,26 @@ Spyder Editor
 
 This is a temporary script file.
 """
-def pt(n):
+#def cutbottomup(n):
+#    p = [0,1,5,8,9,10,17,17,20,24,30]
+#    p = p + [0] * (n - len(p) + 1)
+#    pf = [0] * (n + 1)
+#
+#    for i in range(1, n + 1):
+#        
+#        if n == 0:
+#            return 0
+#            
+#        pcurrent = []
+#        for j in range(1, (i + 1)):
+#            pcurrent.append(p[j] + pf[i - j])
+#        pf[i] = max(pcurrent)
+#        
+#    return pf[n], pf
+#    
+#print(cutbottomup(15))
+
+def cutbottomup(n):
     p = [0,1,5,8,9,10,17,17,20,24,30]
     p = p + [0] * (n - len(p) + 1)
     pf = [0] * (n + 1)
@@ -13,15 +32,16 @@ def pt(n):
         
         if n == 0:
             return 0
-            
-        pcurrent = []
+        f = -1000   
         for j in range(1, (i + 1)):
-            pcurrent.append(p[j] + pf[i - j])
-        pf[i] = max(pcurrent)
+            if f < p[j] + pf[i - j]:
+                
+                f = p[j] + pf[i - j]
+                pf[i] 
         
     return pf[n]
     
-print(pt(150))
+print(cutbottomup(150))
 
 
 def pt_1(n):
