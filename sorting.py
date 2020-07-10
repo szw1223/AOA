@@ -79,6 +79,20 @@ def partition1(arr, low, high):
     arr[i + 1], arr[high] = arr[high], arr[i + 1]
     return (i + 1)
 
+def partition2(array, left, right):
+    key = array[left]
+
+    while left < right:
+        while left < right and array[right] > key:
+            right -= 1
+        array[left] = array[right]
+        while left < right and array[left] <= key:
+            left += 1
+        array[right] = array[left]
+    array[right] = key
+
+    return left
+
 def quickSort(arr, low, high):
     if low < high:
         pi = partition1(arr, low, high)
