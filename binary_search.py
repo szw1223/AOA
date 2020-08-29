@@ -1,7 +1,7 @@
 # Coding: UTF-8
 # Author: Zhewei Song
 # Time: 2020/6/26
-# Project: 
+# Project:  AOA
 import numpy as np
 
 def binSear(l, a):
