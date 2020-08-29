@@ -4,6 +4,8 @@ Spyder Editor
 
 This is a temporary script file.
 """
+
+# a rotated sorted array is a clever transformation.
 #def cutbottomup(n):
 #    p = [0,1,5,8,9,10,17,17,20,24,30]
 #    p = p + [0] * (n - len(p) + 1)

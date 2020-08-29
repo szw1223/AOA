@@ -2,6 +2,7 @@
 # Author: Zhewei Song
 # Time: 2020/6/26
 # Project: 
+import numpy as np
 
 def binSear(l, a):
     left = 0
