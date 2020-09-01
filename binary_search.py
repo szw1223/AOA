@@ -91,3 +91,23 @@ def leftTarget(l, a):
         return right
     else:
         return -1
+
+
+def lengthOfLongestSubstring(s):
+    counts = 0
+    subs = []
+    if len(s) <= 1:
+        return len(s)
+    subs.append(s[0])
+    counts += 1
+    for i in s:
+        j = 0
+        while len(subs) > j:
+            if subs[j] == i:
+                break
+            j += 1
+        else:
+            subs.append(i)
+            counts += 1
+    return counts
+
