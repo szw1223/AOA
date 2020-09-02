@@ -1,4 +1,5 @@
-#leetcode 1021
+#leetcode 1021 for python
+
 def removeOuterParentheses(S: str) -> str:
     stack = ''
     record = 0
