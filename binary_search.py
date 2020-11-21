@@ -91,7 +91,7 @@ def leftTarget(l, a):
         return right
     else:
         return -1
-
+# 挨打的份
 
 def lengthOfLongestSubstring(s):
     counts = 0
@@ -111,3 +111,10 @@ def lengthOfLongestSubstring(s):
             counts += 1
     return counts
 
+
+
+import sys
+
+n = input().split()[0]
+list = input().split()[1]
+sys.stdout(n, list)
